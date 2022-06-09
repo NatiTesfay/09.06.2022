@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form onsubmit=" return checkPasswords()">
+        <label for="firstname" id="fName_labal">first name:</label>
+        <input type="text" name="firstname" id="F_name" placeholder="enter first name" required minlength="2" maxlength="10">
+        <br><br>
+        <label for="lastname" id="n=lName_labal">last name:</label>
+        <input type="text" name="lastname" id="last_name" placeholder="enter last name" required minlength="2" maxlength="10" >
+        <br><br>
+        <label for="birth" id="n=birth_labal">birth day:</label>
+        <input type="date" name="birth_day" id="birth_day" placeholder="enter birth date" required >
+        <br><br>
+        <label for="email" id="n=email_labal">email:</label>
+        <input type="email"  name="email" id="mail_" placeholder="enter email" required  >
+        <br><br>
+        <label for="phone1" id="n=phone_labal">phone:</label>
+        <input type="tel"  name="phone" id="telephone" placeholder="enter phone" required minlength="0" maxlength="10" >
+        <br><br>
+        <!-- <label for="password" id="n=password_labal">password:</label>
+        <input type="text"  name="password" id="password" placeholder="enter password" required>
+        <br><br>
+        <label for="confirm" id="n=confirm_labal">confirm password:</label>
+        <input type="text"  name="confirm" id="checkPasswords" placeholder="enter confirm" required>
+        <br><br> -->
+        <button id="submitBtn" type="submit">Submit</button> 
+    </form>
+
+    <!-- <div id="container">
+    <div id="player"></div>
+    </div> -->
+    <script src="main.js"></script>
+</body>
+</html>

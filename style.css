@@ -1,0 +1,28 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    background: url(background.jpg);
+    background-size: cover;
+    position: absolute;
+  
+}
+
+#player{
+    width: 10vw;
+    height: 10vh;
+    background: black;
+    top: 80%;
+    position: relative;
+    top: 29.5vh;
+}  */
+
+/* #container{
+    border: solid 2px black;
+    width: 60vw;
+    height: 80vw;
+} */
+body{
+    text-align: center;
+}
