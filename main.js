@@ -19,7 +19,7 @@
 var regex =/^[a-zA-Z]+$/;
 
 function checkPasswords() {
-    if(firstName() && birth_day() && _email() && phoneNum()){
+    if(firstName() && birth_day() && _email() && phoneNum() && password() ){
         return true;
     }
     return false;   
@@ -64,4 +64,31 @@ function phoneNum() {
     alert('no');
     return false;
 }
+
+function password() {
+    var userPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.)/;
+    if (userPass.test(userPassword.value) && userPass.test(userPassword.value == userPass.confirm_user.value)) {
+        alert('yes');
+        return true;
+    }
+     password_labal.innerHTML = '*<span> password is not strong</span>';
+     confirm_labal.innerHTML = '*<span> password are not mach</span>';
+     password_labal.style.color = 'red';
+     confirm_labal.style.color = 'red';
+
+
+        return false;  
+     
+
+}
+
+// function checkwords() {
+//     var userPass = /^[A-Z](?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=).{8,}$/;
+//     if (userPass.test(userPassword.value) == userPass.test(confirm_user.value)) {
+//         alert('yes');
+//         return true;
+//     }
+//         alert('no');
+//         return false;
+// }
 
